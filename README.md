@@ -39,7 +39,7 @@ Columns used:
 
 ---
 ## Create Table
-
+```
 Drop table if exists retails_sales;
 create Table retail_sales(
 	transaction_id INT PRIMARY KEY,	
@@ -54,9 +54,11 @@ create Table retail_sales(
 	cogs FLOAT,
 	total_sale FLOAT
 )
+```
 
 ### Check Null Value
 ---
+```
 select * from retail_sales
 where 
 	transaction_id is null
@@ -80,11 +82,13 @@ where
 	cogs is null
 	or
 	total_sale is null
+```
 
   
 ---
 ## Delete Null value from Table
 ---
+```
 Delete from retail_sales
 where 
 	transaction_id is null
@@ -108,6 +112,7 @@ where
 	cogs is null
 	or
 	total_sale is null
+```
 
 ## 🔎 SQL Analysis & Solutions
 
